@@ -8,12 +8,6 @@ The fish app
 
 */
 
-//HTML Styles
-
-document.getElementById('body').style.cssText = 'background-color: #4a80ff';
-
-document.getElementById('wrapperDiv').style.backgroundColor = 'red';
-
 // global variables
 
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
@@ -153,3 +147,10 @@ function renderallcookieshops() {
 makeHeaderRow();
 renderallcookieshops();
 totalCookiesPerHour();
+
+
+
+
+
+
+
