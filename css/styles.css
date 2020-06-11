@@ -171,7 +171,7 @@ Slider
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fade {   
   from {opacity: .4}
   to {opacity: 1}
 }
@@ -181,6 +181,28 @@ Slider
   to {opacity: 1}
 }
 
+#linkToSales{
+  left: 40%;
+  width: 180px;
+  height: 100px;
+  position: absolute;
+  background: url(../images/flip.png); 
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 9px;
+  z-index: -1;
+  font-family: 'Piedra', cursive; 
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(13, 7, 70);
+}
+
+a:hover, :visited{
+  color: rgb(102, 171, 236);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+}
 
 #footerDiv{
   position: absolute;
