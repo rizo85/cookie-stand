@@ -16,7 +16,7 @@
   background-position: center bottom 10px; 
   height: 200px;
   width: 100%;
-
+margin-bottom: 160px;
 /* background-color: tomato; */
 }
 
@@ -29,7 +29,7 @@
 
 .centered {
   position: absolute;
-  top: 12%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: xx-large;
@@ -37,6 +37,21 @@
   -webkit-text-stroke-color: black;
 }
 
+.data{
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 19px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #4C05FF;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: xx-large;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
 
 
 /* 
@@ -52,8 +67,8 @@ Slider
 .slideshow-container {
   max-width: 400px;
 
-  max-height: 500px;
-  min-height: 500px;
+  max-height: 300px;
+
   overflow: hidden;
   position: relative;
   margin: auto;
@@ -79,7 +94,7 @@ Slider
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -111,14 +126,17 @@ Slider
 
 /* Caption text */
 .text {
-  color: #be0d0d;
-  font-size: 35px;
+  color: #e98008;
+  font-size: 45px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  top: 40%;
   width: 100%;
   text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
+
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -134,7 +152,7 @@ Slider
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: -20px 8px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -165,10 +183,13 @@ Slider
 
 
 #footerDiv{
-width: auto;
-  height: 90px;
+  position: absolute;
+width: 100%;
+  height: 60px;
   background-color: aqua;
-  background-image: linear-gradient(rgb(23, 32, 155), rgb(62, 84, 158),  rgb(0, 119, 255),  rgb(0, 162, 255) );
+  background-image: linear-gradient(rgb(23, 32, 155), rgb(155, 23, 155), rgb(62, 84, 158),  rgb(0, 119, 255),  rgb(0, 162, 255), rgb(142, 75, 151) );
+bottom: 0;
+
 }
 
 body{
@@ -176,13 +197,12 @@ body{
 }
 
 #flipDiv1{
-  background-color: blue;
   height: 200px;
   width: 200px;
   position: absolute;
-bottom: -30px;
+bottom: -80px;
 z-index: -2;
-/* animation: spin 5s linear infinite;  */
+animation: spin 5s linear infinite; 
 
 }
 
@@ -193,17 +213,26 @@ z-index: -2;
   position: relative;
   top: 0;
   margin: auto;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); 
+  
+  background: url(../images/flip.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+
 }
 
 #flipDiv2{
-  background-color: blue;
   height: 200px;
   width: 200px;
   position: absolute;
-bottom: -30px;
+bottom: -80px;
 right: 0;
 z-index: -2;
-/* animation: spin2 5s linear infinite;  */
+animation: spin2 5s linear infinite; 
 
 }
 
@@ -214,8 +243,16 @@ z-index: -2;
   position: relative;
   top: 0;
   margin: auto;
-}
+ 
+  
+  background: url(../images/flip.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
 
+}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
