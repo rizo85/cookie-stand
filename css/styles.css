@@ -27,6 +27,10 @@ margin-bottom: 160px;
   color: #ff6666;
 }
 
+.welcomeSpan2{
+  color: #66ff7a;
+}
+
 .centered {
   position: absolute;
   top: 20%;
@@ -171,7 +175,7 @@ Slider
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fade {   
   from {opacity: .4}
   to {opacity: 1}
 }
@@ -181,6 +185,37 @@ Slider
   to {opacity: 1}
 }
 
+#linkToSales{
+
+  font-size: x-large;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  height: 100px;
+  position: absolute;
+  background: url(../images/flip.png); 
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 9px;
+  z-index: -1;
+  font-family: 'Piedra', cursive; 
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(13, 7, 70);
+}
+
+a{
+  color: rgb(230, 230, 95);
+}
+
+a:hover, :visited{
+  color: rgb(102, 171, 236);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+}
 
 #footerDiv{
   position: absolute;
@@ -301,6 +336,14 @@ body{
   background-color: brown;
 
   display: inline-block;
+
+  border: solid white 8px;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+
 }
 
 #mainTitle{
