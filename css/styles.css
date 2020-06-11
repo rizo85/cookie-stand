@@ -1,28 +1,263 @@
+
+
+/* Custom font */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+
+#welcomeDiv {
+  text-align: center;
+  font-family: 'Piedra', cursive; 
+  color: white;
+  background-image: url('../../cookie-stand/images/hiclipart.com.png') ;
+  background-size: 750px 400px, contain;
+  background-repeat: no-repeat;
+  background-position: center bottom 10px; 
+  height: 200px;
+  width: 100%;
+
+/* background-color: tomato; */
+}
+
+/* banner */
+
+
+.welcomeSpan{
+  color: #ff6666;
+}
+
+.centered {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+
+
+/* 
+
+Slider
+
+
+*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 400px;
+
+  max-height: 500px;
+  min-height: 500px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Images for slide */
+
+.imgslide{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #be0d0d;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+#footerDiv{
+width: auto;
+  height: 90px;
+  background-color: aqua;
+  background-image: linear-gradient(rgb(23, 32, 155), rgb(62, 84, 158),  rgb(0, 119, 255),  rgb(0, 162, 255) );
+}
+
+body{
+  overflow: hidden;
+}
+
+#flipDiv1{
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+bottom: -30px;
+z-index: -2;
+/* animation: spin 5s linear infinite;  */
+
+}
+
+#fish1{
+  height: 50px;
+  width: 50px;
+  background-color: brown;
+  position: relative;
+  top: 0;
+  margin: auto;
+}
+
+#flipDiv2{
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+bottom: -30px;
+right: 0;
+z-index: -2;
+/* animation: spin2 5s linear infinite;  */
+
+}
+
+#fish2{
+  height: 50px;
+  width: 50px;
+  background-color: brown;
+  position: relative;
+  top: 0;
+  margin: auto;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@keyframes spin2 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+
+
+
+
+
+/* 
+
+Styles for Sales
+
+
+*/
+
+*{
+  margin: 0;
+}
+
 html {
   background-image:
     linear-gradient(to bottom, rgba(241, 35, 231, 0.52), rgba(34, 19, 117, 0.73), rgba(46, 204, 94, 0.73), rgba(255, 252, 78, 0.73), rgba(219, 101, 32, 0.73), rgba(221, 41, 41, 0.73)),
     url(https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png);
     background-repeat: repeat repeat;
     background-size: 300px 100px;
-
 }
 
 body{
-  background-color: rgb(87, 43, 245);
-  margin: 10%;
-  display: flex;
-  justify-content: center;
-  display: inline-block;
   text-align: center;
-
+  background: transparent;
 }
 
-#wrapperDiv{
-  background-color: blanchedalmond;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
-}
+
 
 #tableDiv{
 
@@ -31,6 +266,13 @@ body{
   display: inline-block;
 }
 
+#mainTitle{
+  margin-bottom: 20px;
+}
+
 #cookieTable{
 
+
+
 }
+
