@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 'use strict';
 
 /*
@@ -15,6 +16,38 @@ var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '
 var allcookieshops = [];
 
 var cookieshopTable = document.getElementById('cookieTable');
+
+
+/*
+
+adding the ad table here to stop crolling
+
+*/
+
+function CookieStoreForm(name,minC,maxC,cPH) {
+
+
+  // console.log(name);
+
+  // console.log(maxC);
+
+  // console.log(minC);
+
+  // console.log(cPH);
+
+  //deletes the table and we can start fresh!
+
+  var Table = document.getElementById('cookieTable');
+  Table.innerHTML = '';
+
+  //This creates new store
+  new CookieStore(name, maxC, minC, cPH);
+
+  makeHeaderRow();
+  renderallcookieshops();
+  totalCookiesPerHour();
+
+}
 
 //my object blue print
 
@@ -148,9 +181,5 @@ makeHeaderRow();
 renderallcookieshops();
 totalCookiesPerHour();
 
-
-
-
-
-
+//Why re-invent the wheel?
 
