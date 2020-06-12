@@ -12,7 +12,7 @@
   text-align: center;
   font-family: 'Piedra', cursive; 
   color: white;
-  background-image: url('../../cookie-stand/images/hiclipart.com.png') ;
+  background-image: url('../images/hiclipart.com.png') ;
   background-size: 750px 400px, contain;
   background-repeat: no-repeat;
   background-position: center bottom 10px; 
@@ -35,7 +35,7 @@ margin-bottom: 160px;
 
 .centered {
   position: absolute;
-  top: 20%;
+  top: 16%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: xx-large;
@@ -277,7 +277,7 @@ img{
   width: 180px;
   height: 100px;
   position: absolute;
-  background: url(../images/flip.png); 
+  background: url(flip.png); 
   background-repeat: no-repeat;
   background-size: contain;
   bottom: 9px;
@@ -300,6 +300,12 @@ a:hover, :visited{
 }
 
 #footerDiv{
+border-style: ridge;
+border-width: 4px;
+border-color: rgb(255, 255, 255, 0.1);
+border-bottom: none;
+border-left: none;
+border-right: none;
   position: absolute;
 width: 100%;
   height: 60px;
@@ -342,6 +348,7 @@ animation: spin 5s linear infinite;
 
 }
 
+
 #flipDiv2{
   height: 200px;
   width: 200px;
@@ -354,6 +361,127 @@ animation: spin2 5s linear infinite;
 }
 
 #fish2{
+  height: 50px;
+  width: 50px;
+  background-color: brown;
+  position: relative;
+  top: 0;
+  margin: auto;
+ 
+  
+  background: url(../images/flip.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+
+#flipDiv3{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 30%;
+bottom: -80px;
+z-index: -2;
+animation: spin 5s linear infinite; 
+
+}
+
+#fish3{
+  height: 50px;
+  width: 50px;
+  background-color: brown;
+  position: relative;
+  top: 0;
+  margin: auto;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); 
+  
+  background: url(../images/flip.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+
+#flipDiv4{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+bottom: -80px;
+right: 30%;
+z-index: -2;
+animation: spin2 5s linear infinite; 
+
+}
+
+#fish4{
+  height: 50px;
+  width: 50px;
+  background-color: brown;
+  position: relative;
+  top: 0;
+  margin: auto;
+ 
+  
+  background: url(../images/flip.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+
+#flipDiv5{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+bottom: -80px;
+right: 40%;
+z-index: -2;
+animation: spin 5s linear infinite; 
+
+}
+
+#fish5{
+  height: 50px;
+  width: 50px;
+  background-color: brown;
+  position: relative;
+  top: 0;
+  margin: auto;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); 
+  
+  background: url(../images/flip.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+#flipDiv6{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+bottom: -80px;
+right: 70%;
+z-index: -2;
+animation: spin2 5s linear infinite; 
+
+}
+
+#fish6{
   height: 50px;
   width: 50px;
   background-color: brown;
@@ -412,23 +540,30 @@ Styles for Sales
 
 }
 
+#buttonHolder{
+position: absolute;
+top: 110px;
+margin-right: 0px;
+right: 50px;
+}
+
 #welcomeDiv2 {
   text-align: center;
   font-family: 'Piedra', cursive; 
   color: white;
-  background-image: url('../../cookie-stand/images/hiclipart.com.png') ;
+  background-image: url('../images/hiclipart.com.png') ;
   background-size: 750px 400px, contain;
   background-repeat: no-repeat;
   background-position: center bottom 10px; 
-  height: 200px;
+  height: 180px;
   width: 100%;
-margin-bottom: 20px;
+margin-bottom: 2px;
 /* background-color: tomato; */
 }
 
 .centered2 {
   position: absolute;
-  top: 140px;
+  top: 120px;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: xx-large;
@@ -442,11 +577,11 @@ margin-bottom: 20px;
 }
 
 html {
-  background-image:
-    linear-gradient(to bottom, rgba(241, 35, 231, 0.52), rgba(34, 19, 117, 0.73), rgba(46, 204, 94, 0.73), rgba(255, 252, 78, 0.73), rgba(219, 101, 32, 0.73), rgba(221, 41, 41, 0.73)),
-    url(https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png);
-    background-repeat: repeat repeat;
-    background-size: 300px 100px;
+  background: url(https://www.fundospaisagens.com/1920x1080/paisagem-em-3d.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body{
@@ -486,7 +621,7 @@ font-family: 'Piedra', cursive;
   font-size: x-large;
   height: 200px;
   width: 200px;
-  background: url(../images/flip.png); 
+  background: url(../images/flip.png);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;
@@ -524,7 +659,7 @@ border-color: rgb(245, 135, 135) rgb(245, 135, 135);
   overflow-y: scroll;
   display: inline-block;
   font-family: 'Piedra', cursive; 
-  font-size: large;
+  font-size: medium;
   color: rgb(18, 142, 214);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(32, 9, 9);
