@@ -11,15 +11,15 @@
 
 <body>
 
-  <div id='wrapperDiv'>
+  <div id='wrapperDiv2'>
 
   <header >
 
-    <div id='welcomeDiv'>
+    <div id='welcomeDiv2'>
   
 
       
-      <div class="centered">Pat’s Salmon Cookies
+      <div class="centered2">Pat’s Salmon Cookies
         <br>
         <p class="welcomeSpan2">SALES STATUS</p>
         <br>
@@ -33,7 +33,30 @@
 
   </header>
 
-  <main >
+  <main>
+
+    <div id='salesEverythingHolder'>
+
+
+
+      <a href='index.html' ><div  id='linkToHome'>LINK TO HOME</div></a>
+<div id='formHolder'>
+    <h2>Location Add-er</h2>
+    <br>
+
+<form action="/action_page.php">
+  <label for="name">Location:</label>
+  <input type="text" id="name" name="name" value="Vegas"><br>
+  <label for="maxC">Min Customer per Hour:</label>
+  <input type="text" id="maxC" name="maxC" value="5"><br>
+  <label for="minC">Max Customer per Hour:</label>
+  <input type="text" id="minC" name="minC" value="40"><br>
+  <label for="cPS">Cookie Avg Per Sale:</label>
+  <input type="text" id="cPS" name="cPS" value="3" ><br><br>
+  <button id='formButton' onclick="CookieStoreForm(document.getElementById('name').value,document.getElementById('minC').value,document.getElementById('maxC').value,document.getElementById('cPS').value)">Add</button>
+</form> 
+
+</div>
 
 
     <div id='tableDiv'>
@@ -41,6 +64,9 @@
       <table id="cookieTable">
 
       </table>
+
+    </div>
+
 
     </div>
   </main>
@@ -53,8 +79,33 @@
 
     </div>
 
+    <div id='flipDiv3'>
+
+      <div id="fish3"></div>
+
+    </div>
+
+    <div id='flipDiv5'>
+
+      <div id="fish5"></div>
+
+    </div>
+
+    <div id='flipDiv6'>
+
+      <div id="fish6"></div>
+
+    </div>
+
+    <div id='flipDiv4'>
+
+      <div id="fish4"></div>
+
+    </div>
+
+    <div id='footerDiv'></div>
     
-    
+
     <div id='flipDiv2'>
 
       <div id="fish2"></div>
@@ -64,10 +115,10 @@
     <div id='footerDiv'></div>
 
   </footer>
-  <div id='linkToSales'><a href='index.html' >TO HOME</a></div>
+  
   </div>
   
-  <script src="js/app1.js"></script> 
+  <script src="js/app.js"></script> 
   
 </body>
 </html>
