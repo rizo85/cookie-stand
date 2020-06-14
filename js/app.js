@@ -20,9 +20,19 @@ var cookieshopTable = document.getElementById('cookieTable');
 
 /*
 
-adding the ad table here to stop crolling
+THIS IS THE ADDED EVENT LISTENER
 
 */
+
+const form = document.getElementById('form');
+
+form.addEventListener('submit', logSubmit);
+
+function logSubmit(event) {
+  CookieStoreForm(document.getElementById('name').value,document.getElementById('minC').value,document.getElementById('maxC').value,document.getElementById('cPS').value);
+  event.preventDefault();
+}
+
 
 function CookieStoreForm(name,minC,maxC,cPH) {
 

@@ -654,6 +654,15 @@ border-color: rgb(245, 135, 135) rgb(245, 135, 135);
 
 }
 
+fieldset{
+  border-radius: 20px;
+  background-color: rgb(10, 10, 231, 0.2);
+}
+
+fieldset:hover{
+  background-color: rgb(10, 10, 231, 0.9);
+}
+
 #cookieTable{
   padding: 20px;
   overflow-y: scroll;

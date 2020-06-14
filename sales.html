@@ -44,16 +44,20 @@
     <h2>Location Add-er</h2>
     <br>
 
-<form action="/action_page.php">
+<form id="form">
+
+<fieldset>
   <label for="name">Location:</label>
-  <input type="text" id="name" name="name" value="Vegas"><br>
+  <input type="text" id="name" name="name" value="" placeholder="City" required><br>
   <label for="maxC">Min Customer per Hour:</label>
-  <input type="text" id="maxC" name="maxC" value="5"><br>
+  <input  type="number" id="maxC" name="maxC" value="" placeholder="Min Customer P/hr" required><br>
   <label for="minC">Max Customer per Hour:</label>
-  <input type="text" id="minC" name="minC" value="40"><br>
+  <input  type="number" id="minC" name="minC" value="" placeholder="Max Customer P/hr" required><br>
   <label for="cPS">Cookie Avg Per Sale:</label>
-  <input type="text" id="cPS" name="cPS" value="3" ><br><br>
-  <button id='formButton' onclick="CookieStoreForm(document.getElementById('name').value,document.getElementById('minC').value,document.getElementById('maxC').value,document.getElementById('cPS').value)">Add</button>
+  <input  type="number" id="cPS" name="cPS" value="" placeholder="Avg Cookies per sale" required>
+  <button  id='formButton' type="submit">Submit Store</button>
+</fieldset>
+
 </form> 
 
 </div>
